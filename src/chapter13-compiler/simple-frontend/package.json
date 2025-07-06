@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "rm -rf dist && vite",
-    "build": "rm -rf dist && vite build",
+    "dev": "rimraf dist && vite",
+    "build": "rimraf dist && vite build",
     "start": "vite preview"
   }
 }

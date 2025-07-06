@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "rm -rf dist && vite build",
-    "build:ssg": "rm -rf dist && vite build && tsx server/generate-static-pages.ts",
+    "build": "rimraf dist && vite build",
+    "build:ssg": "rimraf dist && vite build && tsx server/generate-static-pages.ts",
     "start": "tsx watch server/index.ts"
   }
 }
