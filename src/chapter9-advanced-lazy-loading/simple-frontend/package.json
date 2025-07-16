@@ -7,7 +7,7 @@
     "dev": "vite",
     "build:client": "vite build --outDir dist/client",
     "build:server": "vite build --outDir dist/server --ssr App.tsx",
-    "build": "rm -rf dist && npm run build:client && npm run build:server",
+    "build": "rimraf dist && npm run build:client && npm run build:server",
     "start": "tsx watch server/index.ts"
   }
 }
